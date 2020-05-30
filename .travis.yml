@@ -11,6 +11,9 @@ install:
 script:
   - 'if [ -n "${PREPUBLISH-}" ]; then npm run pretravis && npm run prepublish && npm run posttravis; elif [ -n "${LINT-}" ]; then npm run lint; else npm run travis; fi'
 sudo: false
+branches:
+  only: 
+    - master
 env:
   matrix:
     - 'TEST=true ESLINT=6 PACKAGE=eslint-config-airbnb-base'
