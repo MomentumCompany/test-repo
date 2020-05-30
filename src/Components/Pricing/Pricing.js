@@ -11,10 +11,10 @@ class Pricing extends Component {
     };
 
     handlePrice = (e) => {
-        if(e.target.id == 1) {
+        if(e.target.id === 1) {
             this.props.history.replace('/dashboard');
         }
-        else if(e.target.id == 2){
+        else if(e.target.id === 2){
             e.preventDefault();
         }
         else {
