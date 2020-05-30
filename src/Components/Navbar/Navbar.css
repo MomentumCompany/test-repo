@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+.Navbar {position: fixed; top: 0; left: 0; height: 100%; width: 10vh; background-color: #77B800; bottom: 0; transition: .4s; box-shadow: 2px 0 4px rgba(127,127,127,0.6);}
+.logoSpace {width: 100%; height: 20%; display: grid; background-color: white; place-items: center;}
+.fa-plug { margin: auto; color: #77B800; font-size: 35px; padding: 10px; border-radius: 50%;}
+.linkSpace { width: 100%; height: 80%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.linkSpace i { width: 100%; height: 25%; display: flex; align-items: center; font-size: 30px; color: white; justify-content: center;}
+.linkSpace i:hover { color: black; cursor: pointer;}
+.navTitle { display: flex; justify-content: center; align-items: center; margin-left: 10px; margin-top: 10px;}
+.navTitle h5 { transition: .4s; animation: fadeIn .4s ease-in forwards; font-family: 'Roboto', sans-serif; font-size: 18px;}
+.fa-arrow-right { position: absolute; right: -10px; top: 18%; display: flex; justify-content: center; align-items: center; padding: 10px; border-radius: 50%; background-color: black; color: white;}
+.fa-arrow-right:hover {cursor: pointer;}
+@keyframes fadeIn {
+    from { opacity: 0}
+    to { opacity: 1}
+}
+
+@keyframes fadeOut {
+    from { opacity: 1}
+    to { opacity: 0}
+}

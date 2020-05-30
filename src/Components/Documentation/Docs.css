@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+.first-head {font-family: 'Montserrat', sans-serif;}
+.second-head {font-family: 'Roboto', sans-serif;}
+body {font-family: 'Open Sans', sans-serif;}
+
+/* wrapper1 */
+
+.Left {text-align: center; padding: 20px 20px 80px;}
+.Right { background-color: #77B800; height: 20vh;}
+.RightImg img {width: 300px; height: 150px; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); box-shadow: 0px 0px 12px -2px rgba(127,127,127,0.6);}
+.head-hr{ width: 250px; display: inline-block; align-self: center; background-color: #77B800;}
+
+@media (min-width: 900px){
+.wrapper1 {display: flex;}
+.head-hr{ width: 280px; background-color: #77B800;}
+.Left {width: 50%; height: 60vh; padding: 20vh 100px; text-align: left;}
+.Right {width: 50%; height: 60vh;}
+.RightImg img {width: 500px; height: 250px; position: absolute; top: 10%; left: 70%; transform: translateX(-70%); box-shadow: 0px 0px 12px -2px rgba(127,127,127,0.6);}
+}
+
+/* wrapper 2 */
+.feature-heading {display: grid; place-items: center; margin: 5% 0 0;}
+.wrapper2 { display: flex; flex-direction: column; align-items: center; text-align: center;}
+.cards {box-shadow: 0px 0px 12px -2px rgba(119,184,0,0.6); margin: 5% 5%; padding: 5% 10% 25%;}
+.fa-feather-alt {font-size: 24px; margin-bottom: 10%; color: #77B800;}
+
+@media (min-width: 900px){
+.wrapper2 {display: flex; flex-direction: row; justify-content: space-around; padding: 0 8%;}
+.cards {box-shadow: 0px 0px 17px -2px rgba(119,184,0,0.75); margin: 4%; padding: 2% 2% 10%;}
+}
+
+/* wrapper 3 */
+.price-heading {display: grid; place-items: center; margin-top: 5%;}
+.wrapper3 {margin: 0%; padding: 0%;}
+.price {display: flex; margin: 2%; width: 100%;}
+.cardsAgain {flex-basis: 30%; padding: 4% 10%; margin: 10% 6%; box-shadow: 0px 0px 12px -2px rgba(119,184,0,0.6);}
+.cardsAgain .ul {list-style: none;}
+.cardsAgain .ul li {font-size: 14px;}
+.cardsAgain .price {margin-top: 10%;}
+.fa-check {color: #77B800;}
+
+@media (min-width: 900px){
+.price-heading {display: grid; place-items: center; margin: 2%;}
+.wrapper3 {display: flex; flex-direction: row; justify-content: space-around; padding: 0 10%;}
+.cardsAgain {padding: 2%; margin: 0 0 5%;}
+}
